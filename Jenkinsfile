@@ -2,7 +2,7 @@ pipeline {
     agent {
         node {
         label 'slave'
-        customWorkspace '/home/ec2-user/'
+        customWorkspace '/tmp/'
         }
     }
     tools {
