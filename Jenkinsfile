@@ -31,7 +31,7 @@ pipeline {
                   def uploadSpec = """{
                      "files": [{
                         "pattern": "target/my-app*.jar",
-                        "target": "gradle-dev-local/zedops/my-app*.jar"
+                        "target": "gradle-dev-local/zedops/my-app.jar"
                      }]
                   }"""
 
