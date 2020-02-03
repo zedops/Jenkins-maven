@@ -1,5 +1,10 @@
 pipeline {
-    agent slave
+    agent 
+        node {
+        label 'my-defined-label'
+        customWorkspace '/home/ec2-user/'
+        }
+    }
     tools {
         maven 'Maven 3.3.9'
         jdk 'jdk8'
