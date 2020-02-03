@@ -1,3 +1,5 @@
+// ZedOps
+//This JenkinsFile requires a Slave , Tool Configuration && a Jfrog Artifactory Server
 pipeline {
     agent {
         node {
