@@ -41,11 +41,11 @@ pipeline {
         stage('upload') {
             steps {
                script { 
-                  def server = Artifactory.server 'art-1'
+                  def server = Artifactory.server 'zedops'
                   def uploadSpec = """{
                      "files": [{
-                        "pattern": "path/",
-                        "target": "path/"
+                        "pattern": "target/my-app*.jar",
+                        "target": "gradle-dev-local/zedops/my-app*.jar"
                      }]
                   }"""
 
