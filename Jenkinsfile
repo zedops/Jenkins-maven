@@ -1,11 +1,11 @@
 rtServer (
-    id: 'Artifactory-1',
+    id: 'zedops',
     url: 'http://my-artifactory-domain/artifactory',
     // If you're using username and password:
-    username: 'user',
-    password: 'password'
+    //username: 'user',
+    //password: 'password'
     // If you're using Credentials ID:
-    credentialsId: 'ccrreeddeennttiiaall'
+    credentialsId: 'artifactory'
     // If Jenkins is configured to use an http proxy, you can bypass the proxy when using this Artifactory server:
     bypassProxy: true
     // Configure the connection timeout (in seconds).
