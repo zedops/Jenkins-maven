@@ -10,7 +10,7 @@ rtServer (
     //bypassProxy: true
     // Configure the connection timeout (in seconds).
     // The default value (if not configured) is 300 seconds:
-    timeout = 300
+    //timeout = 300
 )
 pipeline {
     agent {
