@@ -2,7 +2,6 @@ pipeline {
     agent {
         node {
         label 'slave'
-        customWorkspace '/tmp/'
         }
     }
     tools {
