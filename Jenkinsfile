@@ -38,9 +38,18 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
+        stage('upload') {
             steps {
-                sh 'echo hello world'
+               script { 
+                  def server = Artifactory.server 'art-1'
+                  def uploadSpec = """{
+                     "files": [{
+                        "pattern": "path/",
+                        "target": "path/"
+                     }]
+                  }"""
+
+                  server.upload(uploadSpec)
             }
         }
     }
